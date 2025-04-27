@@ -24,6 +24,7 @@ body, html, #root {
   animation: beat 1s infinite;
   margin-bottom: 20px;
 }
+
 .reveal-proposal {
   padding: 10px 20px;
   font-size: 1.5rem;
@@ -186,3 +187,63 @@ button.yes:hover {
 .floating-heart:nth-child(18) { left: 95%; animation-delay: 3.2s; }
 .floating-heart:nth-child(19) { left: 5%; animation-delay: 1.8s; }
 .floating-heart:nth-child(20) { left: 50%; animation-delay: 2.5s; }
+
+@media (max-width: 768px) {
+  .container {
+    gap: 50px; 
+  }
+
+  .poem {
+    max-height: 500px;
+    overflow-y: auto;
+    font-size: 1rem; 
+    padding: 15px;
+  }
+
+  .proposal {
+    max-height: 250px; 
+    overflow-y: auto; 
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: row; 
+    gap: 20px; 
+  }
+
+  .reveal-proposal {
+    font-size: 1.2rem;
+  }
+
+  .heart {
+    font-size: 3rem; 
+  }
+
+  .accept-message {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .poem {
+    max-height: 200px; 
+    font-size: 0.9rem;
+  }
+
+  .proposal {
+    max-height: 200px;
+    font-size: 0.9rem;
+  }
+
+  .reveal-proposal {
+    font-size: 1rem;
+  }
+
+  .heart {
+    font-size: 2.5rem;
+  }
+
+  .accept-message {
+    font-size: 1.2rem;
+  }
+}

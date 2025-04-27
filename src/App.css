@@ -226,12 +226,12 @@ button.yes:hover {
 
 @media (max-width: 480px) {
   .poem {
-    max-height: 200px; 
+    max-height: 240px; 
     font-size: 0.9rem;
   }
 
   .proposal {
-    max-height: 200px;
+    max-height: 300px;
     font-size: 0.9rem;
   }
 
